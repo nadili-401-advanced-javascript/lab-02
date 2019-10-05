@@ -1,12 +1,16 @@
 {
   "name": "list",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "jest": "^24.9.0"
+  },
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+    "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage"
   },
   "keywords": [],
@@ -14,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.1.0",
-    "jest": "^24.8.0"
-  }
+    "jest": "^24.9.0"
+  },
+  "description": ""
 }
