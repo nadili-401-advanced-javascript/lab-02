@@ -2,6 +2,10 @@
   "name": "list",
   "version": "1.0.0",
   "main": "index.js",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "jest": "^24.9.0"
+  },
   "directories": {
     "lib": "lib"
   },
