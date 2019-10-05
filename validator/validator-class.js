@@ -5,38 +5,33 @@ class Validator{
     this.schema = schema;
   }
 
-  isValid (input, rules) {
-    return true;
-  };
-  
-  
   isString (input) {
     return typeof input === 'string';
-  };
+  }
   
   isObject (input) {
     return typeof input === 'object' && !(input instanceof Array);
-  };
+  }
   
   isArray (input, valueType) {
     return Array.isArray(input) && (valueType ? input.every( val => typeof val === valueType ) : true);
-  };
+  }
   
   isBoolean (input) {
     return typeof input === 'boolean';
-  };
+  }
   
   isNumber (input) {
     return typeof input === 'number';
-  };
+  }
   
   isFunction (input) {
     return typeof input === 'function';
-  };
+  }
   
   isTruthy (input) {
     return !!input;
-  };
+  }
   
   isCorrectType (input, field) {
     switch(field.type) {
@@ -47,7 +42,7 @@ class Validator{
     case 'boolean': return this.isBoolean(input);
     default: return false;
     }
-  };
+  }
   
   isValid (schema,data) {
   
@@ -62,12 +57,12 @@ class Validator{
         ? this.isTruthy(data[fieldName])
         : true;
   
-        // Am I the right type (if we even care)
+      // Am I the right type (if we even care)
       let type = field.type
         ? this.isCorrectType(data[fieldName], field)
         : true;
   
-        // If anything is false ...
+      // If anything is false ...
       if (!(required && type)) {
         valid = false;
       }
@@ -75,7 +70,7 @@ class Validator{
     }
   
     return valid;
-  };
+  }
   
 }
 
