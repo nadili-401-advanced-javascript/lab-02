@@ -10,6 +10,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage"
   },
   "keywords": [],

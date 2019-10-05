@@ -19,7 +19,7 @@ class Car extends Vehicle {
   }
 }
 
-class Motocycle extends Vehicle{
+class Motorcycle extends Vehicle {
   constructor (name){
     super(name, 2);
   }
@@ -27,4 +27,7 @@ class Motocycle extends Vehicle{
     return 'Wheee!';
   }
 }
-module.exports = {Car, Motocycle};
+
+
+
+module.exports = {Car, Motorcycle};
