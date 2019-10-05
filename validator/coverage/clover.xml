@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1570238083827" clover="3.2.0">
+  <project timestamp="1570238083828" name="All files">
+    <metrics statements="26" coveredstatements="22" conditionals="20" coveredconditionals="16" methods="12" coveredmethods="11" elements="58" coveredelements="49" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+    <file name="validator-class.js" path="/Users/Animag79/codefellows/401/lab-02/validator/validator-class.js">
+      <metrics statements="26" coveredstatements="22" conditionals="20" coveredconditionals="16" methods="12" coveredmethods="11"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="14" count="12" type="stmt"/>
+      <line num="18" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="19" type="cond" truecount="4" falsecount="0"/>
+      <line num="26" count="6" type="stmt"/>
+      <line num="30" count="9" type="stmt"/>
+      <line num="34" count="6" type="stmt"/>
+      <line num="38" count="6" type="stmt"/>
+      <line num="42" count="12" type="cond" truecount="3" falsecount="3"/>
+      <line num="43" count="6" type="stmt"/>
+      <line num="44" count="3" type="stmt"/>
+      <line num="45" count="3" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="47" count="0" type="stmt"/>
+      <line num="48" count="0" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
+      <line num="56" count="3" type="stmt"/>
+      <line num="58" count="12" type="stmt"/>
+      <line num="61" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="66" count="12" type="cond" truecount="1" falsecount="1"/>
+      <line num="71" count="12" type="cond" truecount="4" falsecount="0"/>
+      <line num="72" count="8" type="stmt"/>
+      <line num="77" count="3" type="stmt"/>
+      <line num="82" count="1" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
