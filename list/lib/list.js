@@ -5,6 +5,7 @@ class List {
     this.length = 0;
     this.data = {};
   }
+ 
 
   reindex() {
     let data = Object.keys(this.data).sort().reduce((acc,val,idx) => {
@@ -15,14 +16,20 @@ class List {
     this.length = Object.keys(data).length;
     this.data = data;
   }
-
+  /**
+   * @param  {} item
+   * @returns  length
+   */
   push(item) {
     if ( arguments.length === 1 ) {
       this.data[this.length++] = item;
     }
     return this.length;
   }
-
+  /**
+   * @param  ()
+   * @returns item
+   */
   pop() {
     if ( ! this.length ) { return undefined; }
     let item = this.data[this.length - 1];
@@ -30,7 +37,10 @@ class List {
     this.length--;
     return item;
   }
-
+  /**
+   * @param  ()
+   * @returns item
+   */
   shift() {
     if ( ! this.data[0] ) { return undefined; }
     let item = this.data[0];
@@ -38,13 +48,18 @@ class List {
     this.reindex();
     return item;
   }
-
+  /**
+   * @param  {} item
+   * @returns length 
+   */
   unshift(item) {
     this.data[-1] = item;
     this.reindex();
     return this.length;
   }
-
+  /**
+   * @param  {} callback
+   */
   forEach(callback) {
     if ( this.length ) {
       for (let i = 0; i <= this.length - 1; i++) {
@@ -52,7 +67,11 @@ class List {
       }
     }
   }
-
+  /**
+   * @param  {} callback
+   * @returns result 
+  
+   */
   map(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -61,7 +80,9 @@ class List {
     }
     return result;
   }
-
+  /**
+   * @param  {} callback
+   */
   filter(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -72,7 +93,10 @@ class List {
     }
     return result;
   }
-
+  /**
+   * @param  {} callback
+   * @returns  state
+   */
   reduce(callback, state) {
     if ( ! this.length ) { return undefined; }
     for (let i = 0; i <= this.length - 1; i++) {
